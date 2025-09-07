@@ -1,7 +1,6 @@
 package com.eazybytes.accounts.audit;
 
 import org.springframework.data.domain.AuditorAware;
-import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.stereotype.Component;
 
 import java.util.Optional;

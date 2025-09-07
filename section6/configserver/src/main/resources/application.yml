@@ -10,7 +10,7 @@ spring:
     config:
       server:
         git:
-          url: https://github.com/coderyassin/eazybytes-config.git
+          uri: "https://github.com/coderyassin/eazybytes-config.git"
           default-label: main
           timeout: 5
           clone-on-start: true
@@ -29,3 +29,6 @@ management:
     health:
       probes:
         enabled: true
+
+encrypt:
+  key: "45D81EC1EF61DF9AD8D3E5BB397F9"
