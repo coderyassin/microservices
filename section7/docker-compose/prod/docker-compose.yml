@@ -98,6 +98,8 @@ services:
     depends_on:
       configserver:
         condition: service_healthy
+      accountsdb:
+        condition: service_healthy
     environment:
       SPRING_APPLICATION_NAME: "accounts"
       SPRING_PROFILES_ACTIVE: prod
@@ -121,6 +123,8 @@ services:
     depends_on:
       configserver:
         condition: service_healthy
+      loansdb:
+        condition: service_healthy
     environment:
       SPRING_APPLICATION_NAME: "loans"
       SPRING_PROFILES_ACTIVE: prod
@@ -143,6 +147,8 @@ services:
       - "9000:9000"
     depends_on:
       configserver:
+        condition: service_healthy
+      cardsdb:
         condition: service_healthy
     environment:
       SPRING_APPLICATION_NAME: "cards"
