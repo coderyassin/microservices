@@ -5,6 +5,7 @@ on:
     branches: [ "master" ]
     paths:
       - 'section7/accounts/**'
+      - '.github/workflows/build-accounts.yml'
   pull_request:
     branches: [ "master" ]
 
