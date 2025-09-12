@@ -3,6 +3,8 @@ name: Build
 on:
   push:
     branches: [ "master" ]
+    paths:
+      - 'section7/accounts/**'
   pull_request:
     branches: [ "master" ]
 
